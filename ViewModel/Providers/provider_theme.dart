@@ -1,4 +1,4 @@
-import '/Model/Icons_model.dart';
+import '../../Model/icons_model.dart';
 import '/Model/colors_model.dart';
 import '/Model/shadows_model.dart';
 import '/Model/styles_model.dart';

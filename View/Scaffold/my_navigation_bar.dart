@@ -19,7 +19,7 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
           setState(() {
             _selectIndex = index;
           });
-         ProcessNavigationBar(context).screenIndex(index); 
+          ProcessNavigationBar(context).screenIndex(index);
         },
         type: BottomNavigationBarType.fixed,
         unselectedItemColor: Colors.grey[400],
@@ -33,33 +33,19 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
               ),
               label: "Home"),
           BottomNavigationBarItem(
-              icon: Icon(Icons.explore_outlined),
+              icon: Icon(Icons.location_on_outlined),
               activeIcon: Icon(
-                Icons.explore,
+                Icons.location_on,
                 color: Colors.white,
               ),
-              label: "Explore"),
+              label: "Location"),
           BottomNavigationBarItem(
-              icon: Icon(Icons.add_circle_outline),
+              icon: Icon(Icons.settings_suggest_sharp),
               activeIcon: Icon(
-                Icons.add_circle,
+                Icons.settings,
                 color: Colors.white,
               ),
-              label: "Add"),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.subscriptions_outlined),
-              activeIcon: Icon(
-                Icons.subscriptions,
-                color: Colors.white,
-              ),
-              label: "Subscriptions"),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.video_library_outlined),
-              activeIcon: Icon(
-                Icons.video_library,
-                color: Colors.white,
-              ),
-              label: "Library"),
+              label: "Setting"),
         ]);
   }
 }
